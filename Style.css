@@ -1,0 +1,47 @@
+.all{
+  display: grid;
+  max-width: 1000px;
+  margin:auto;
+  height: 1000px;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-rows: 100px 100px 1fr 100px;
+  grid-template-areas:
+  "header header header"
+  "spaceleft top spaceright"
+  "spaceleft bottom spaceright"
+  "footer footer footer";
+  gap: 10px;
+
+}
+
+.Header{
+  background-color: red;
+  grid-area: header
+
+}
+.spaceleft{
+  background-color: green;
+  grid-area: spaceleft
+}
+
+.top{
+  background-color: blue;
+  grid-area: top
+
+
+}
+.spaceright{
+  background-color:yellow;
+  grid-area: spaceright
+
+}
+.bottom{
+  background-color:blanchedalmond;
+  grid-area: bottom
+
+}
+.footer{
+  background-color: aqua;
+  grid-area: footer
+
+}
